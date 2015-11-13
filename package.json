@@ -8,8 +8,9 @@
     "print": "node ./cli/dist && node ./browserify/dist && node ./gulp/dist",
     "cli": "babel cli/src -d cli/dist",
     "browserify": "browserify -t babelify browserify/src/index.js -o browserify/dist/index.js",
-    "gulp": "gulp",
-    "mocha": "mocha --compilers js:babel-core/register --reporter nyan mocha/test"
+    "gulp-transform": "gulp transform",
+    "mocha": "mocha --compilers js:babel-core/register --reporter nyan mocha/test",
+    "gulp-test": "gulp test"
   },
   "keywords": [
     "babel"
